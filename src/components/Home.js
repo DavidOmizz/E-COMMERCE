@@ -1,5 +1,6 @@
 import React from 'react'
 import hero1 from '../images/hero-1.jpg'
+import hero2 from '../images/hero-4.jpg'
 
 function Home() {
 
@@ -21,7 +22,7 @@ function Home() {
       </div> */}
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src={hero1} class="d-block w-100" alt="..."/>
+      <img src={hero2} class="d-block w-100" alt="..."/>
       {/* <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
