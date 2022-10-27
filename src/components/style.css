@@ -41,3 +41,6 @@ nav ul li{
     object-fit: contain;
     /* background-color: red; */
 }
+.card-img-top:hover {
+    transform: scale(105%);
+}

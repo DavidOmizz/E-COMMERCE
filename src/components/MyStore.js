@@ -45,7 +45,7 @@ function MyStore() {
   return (
     <div className='container-fluid'>
         <div className='row justify-content-center'>
-        <p>The number of items in your cart are: {productCount.cartitem.length} </p>
+        {/* <p>The number of items in your cart are: {productCount.cartitem.length} </p> */}
             <form onKeyUp={filterItems}>
                 <div class="mb-3 col-md-6 col-6 d-flex mx-auto mt-3">
                     <input type="text" value={searchKey} onChange={(e)=>setSearchKey(e.target.value)} name = 'name' class="form-control" id="exampleFormControlInput1" placeholder="Search"/>
