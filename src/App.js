@@ -23,9 +23,23 @@ import itemReducer from './reducers/itemReducer';
 import SignUp from './inc/SignUp';
 import SignIn from './inc/SignIn';
 
+
+//Redux  Persist
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'; // default to local storage for web
+import { PersistGate } from 'redux-persist/integration/react'
+// import persistReducer from 'redux-persist/es/persistReducer';
+
+
  
 function App() {
-  const store = createStore(itemReducer)
+  const persistConfig = {
+    key: 'root',
+    storage,
+  }
+  const persistedReducer = persistReducer(persistConfig, itemReducer)
+  const store = createStore(persistedReducer)
+  const persistor = persistStore(store)
   // return (
     // <Provider store={store}>
     // <BrowserRouter>
@@ -46,6 +60,7 @@ function App() {
   // );
   return (
     <Provider store = {store}>
+      <PersistGate loading={null} persistor={persistor}>
       <BrowserRouter>
         <div>
           <NavBar/>
@@ -61,6 +76,7 @@ function App() {
         </Routes>
         </div>
       </BrowserRouter>
+      </PersistGate>
     </Provider>
   )
 }
