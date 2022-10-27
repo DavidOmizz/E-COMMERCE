@@ -11,7 +11,7 @@ function NavBar() {
         <div>
             <nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand text-white"  href="#">D<span style={{color:'red', fontWeight: 'bold'}}>STORE</span></a>
+    <a class="navbar-brand text-white"  href="#">OMIZZ<span style={{color:'red', fontWeight: 'bold'}}>STORE</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
