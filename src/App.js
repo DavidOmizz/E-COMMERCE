@@ -11,6 +11,8 @@ import Home from './components/Home';
 import MyStore from './components/MyStore';
 import './components/style.css'
 
+// import './components/script.js'
+
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import ProductReducer from './reducers/ProductReducer';
@@ -65,14 +67,14 @@ function App() {
         <div>
           <NavBar/>
         <Routes>
-          <Route path='/' element= {<Home/>} />
+          <Route path='home' element= {<Home/>} />
           <Route path='store' element= {<MyStore/>} />
           <Route path='showCart' element = {<ShowCart/>}/>
           <Route path='contact' element={<Contact/>}/>
           <Route path='store/:id' element={<SinglePage/>}/>
           <Route path='*' element={<PageNotFound/>}/>
           <Route path='signup' element={<SignUp/>}/>
-          <Route path='signin' element={<SignIn/>}/>
+          <Route path='/' element={<SignIn/>}/>
         </Routes>
         </div>
       </BrowserRouter>

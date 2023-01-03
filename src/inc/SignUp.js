@@ -39,7 +39,8 @@ function SignUp() {
   return (
     <div className='container'>
         <div className='row justify-content-center'>
-            <div className='col-md-6 col-8 shadow bg-body rounded mt-5 p-4'>
+        <h2 className='text-center mt-3 w-75'>REGISTRATION FORM</h2>
+            <div className='col-md-6 col-8 shadow bg-body rounded mt-3 p-4'>
                 {
                     (errorMessage && <div class="alert alert-danger" role="alert">
                         Fields cannot be empty
@@ -69,7 +70,7 @@ function SignUp() {
                     </div>
                     <button type='submit' className='btn btn-primary d-flex mx-auto'>Sing Up</button>
                 </form>
-                <p className='text-align-center'>Already have an account? <Link to="/sigin" >Sign In</Link></p> 
+                <p className='text-center'>Already have an account? <Link to="/" >Sign In</Link></p>
             </div>
         </div>
     </div>

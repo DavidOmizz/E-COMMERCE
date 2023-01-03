@@ -1,46 +1,237 @@
-nav ul li a{
-    color: white !important;
-    text-decoration: none;
+*{
+    padding: 0;
+    margin: 0;
 }
-nav ul{
-    list-style-type: none;
+img {
+    max-width: fit-content;
 }
-nav ul li{
-    margin: 20px;
-}
-
-
-/* Style footer */
-.me {
-    background-color: black;
-}
-.me ul {
-    list-style: none;
-    margin: 5px;
+nav {
     display: flex;
-    /* margin: 10px; */
-    justify-content: center;
+    justify-content: space-around !important;
+    /* padding: 0 100px; */
+    color: #000;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.me li {
-    margin: 10px;
+.nav-item {
+    color: #000;
 }
-.me a{
+.nav-items {
+    display: flex;
+}
+.nav-items li a {
     text-decoration: none;
-    color: white;
+    font-size: 18px;
+    font-weight: 500;
 }
+/* .nav-item li a:hover {
+    color: red;
+} */
+
+    
+
+.badge {
+    position: relative !important;
+    margin-top: -30px;
+    border-radius: 100%;
+    font-size: 10px;
+    /* padding: 5px; */
+    margin-left: -25px;
+}
+
+.nav-item a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px !important;
+    text-transform: uppercase;
+}
+.nav-item a:hover {
+    color: red !important;
+}
+.nav-item a:active {
+    color: blue !important;
+    font-weight: bolder;
+}
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+/* nav .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -1px;
+} */
+.navbar-nav {
+    font-size: 17px;
+}
+.navbar-nav li {
+    margin: 5px;
+}
+
+
+/* STYLING IN HOME ---------------------------------------------------------------------------------->>>> */
 
 /* Stlying Home Hero */
+.heroText h1{
+    font-weight: bold;
+    /* text-align: center; */
+    padding: 13%;
+    margin-left: 45%;
+    font-size: 3rem;
+}
+.heroText p {
+    margin-left: 58%;
+    font-size: 1rem;
+    margin-top: -13%;
+    width: 30%;
+}
+
 .carousel-item img {
     height: 80vh;
 }
 
-/* # Single product */
+
+/* Style section in home ------------------------------------------------------------------------- */
+
+/* CATEGORIES ------------------------------------------------------------------------------>>>>>>>>> */
+.category-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home-gender {
+    margin: 20px;
+    padding: 40px;
+}
+.home-gender img {
+    
+}
+.male-section {
+    /* margin-top: 40px; */
+    justify-content: center;
+}
+.female-section {
+    /* margin: 40px; */
+    justify-content: center;
+}
+
+
+
+/* END OF HOME STYLING ------------------------------------------------------------------>>>>>>>>>>>>>>>>> */
+
+
+/* STYLING OF STORE ----------------------------------------------------------------------------- */
+
+/* Slider ----------------------------------------- */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    /* margin: -20px 2px; */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.carousel-caption h1{
+    color: blue !important;
+    padding: 160px !important;
+    font-size: 2.5rem !important;
+    text-transform: uppercase !important;
+    line-height: 40px !important;
+    font-weight: bold !important;
+}
+
+.star-icon {
+    color: rgb(255, 174, 0);
+}
+
+
+/* # Single product ----------------------------------------------------------------------- */
 .card-img-top {
     height: 200px;
+    justify-content: center;
+    text-align: center;
     /* width: 400px; */
-    object-fit: contain;
+    object-fit: contain !important;
     /* background-color: red; */
 }
 .card-img-top:hover {
     transform: scale(105%);
+}
+.card-img-top-single-page:hover {
+    transform: scale(120%);
+}
+
+
+#containerss {
+	display: inline-flex;
+	cursor: pointer;
+	float: right;
+	margin-top: 20px;
+	margin-right: 40px;
+	display: none;
+}
+
+/* END OF STYLING STORE ------------------------------------------------------------------------>>>>>>>>> */
+
+
+/* FOOTER ----------------------------------------------------------------------------------->>>>>>>> */
+
+footer {
+    background-color: #000;
+    color: #323232;
+    padding: 30px;
+}
+
+.footer-flex h4{
+    color: blue;
+}
+.footer-flex p{
+    color: #C7C7CD;
+    font-size: 14px;
+}
+.footer-flex p a {
+    text-decoration: none;
+    color: #C7C7CD;
+   
+}
+.footer-flex p a:hover {
+    color: blue;
+}
+
+.icons {
+    color: white;
+    margin-right: 20px;
+}
+.icons:hover {
+    color: blue;
+}
+
+.contact-icons {
+    color: blue;
+    margin-right: 10px;
+}
+
+.copyright {
+    color: silver;
+}
+
+
+
+
+
+/* Stylying my form */
+.StyleForm {
+    /* padding: 50px; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* height: 50px; */
+	/* background-color: red; */
+	/* width: 50px; */
+	/* transform: translate(-50px,-50px);
+	position: absolute;
+	top: 25%; 
+	/* left: 50%; */
+	/* padding: 10px; */
 }

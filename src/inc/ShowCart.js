@@ -22,7 +22,7 @@ function ShowCart() {
           <table class="table table-responsive  table-hover">
             <thead>
               <tr>
-                <th scope="col">#</th>
+                <th scope="col">S/N</th>
                 <th scope="col">Photo</th>
                 <th scope="col">Item Name</th>
                 <th scope="col">Item Price</th>

@@ -52,7 +52,8 @@ function SignIn() {
     <div className='container'>
             
         <div className='row justify-content-center'>
-            <div className='col-10 col-md-4 shadow rounded mt-5 p-4'>
+        <h2 className='text-center mt-5 w-75'>SIGN IN</h2>
+            <div className='col-10 col-md-4 shadow rounded bg-body mt-3 p-4 '>
                 {
                     (errorMessage && <div class="alert alert-danger" role="alert">
                     Invalid Username or Password
@@ -63,6 +64,7 @@ function SignIn() {
                     Login Successfully
                 </div>)
                 }
+                
                 <form onSubmit={submit}>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">UserName:</label>
@@ -75,8 +77,7 @@ function SignIn() {
                     <button type='submit' className='btn btn-primary d-flex mx-auto'>Sign In</button>
                 </form>
                 {/* <p className=' mt-5 text-align-center'>Don't have an account? <a className='btn btn-primary' onClick={(e)=> navigate("/signup")}>SignUp</a></p>  */}
-                <p className=' mt-5 text-align-center'>Don't have an account? <Link to="/signup" >SignUp</Link></p> 
-
+                <p className='text-center'>Don't have an account? <Link to="/signup" >SignUp</Link></p>
             </div>
         </div>
     </div>
